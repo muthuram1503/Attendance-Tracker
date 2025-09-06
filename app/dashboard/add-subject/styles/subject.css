@@ -1,0 +1,292 @@
+/* Base style for dialog content */
+.responsive-dialog-content {
+  /* max-width: 90vw; */
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1300px) {
+  .responsive-dialog-content {
+    max-width: 600px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: 85vh;
+  }
+
+  .responsive-dialog-content form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .responsive-dialog-content input,
+  .responsive-dialog-content select,
+  .responsive-dialog-content button,
+  .responsive-dialog-content .flex,
+  .responsive-dialog-content .grid {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+
+/* Specifically for Nest Hub Max 1280x800 */
+
+
+@media  (max-width: 1030px) and (max-height: 1370px) {
+  .responsive-dialog-content {
+    max-width: 640px;
+    padding: 2rem;
+  
+    /* margin-top:0px; */
+    top: 250px;
+  }
+  
+
+  .button
+  {
+    
+    margin-right: 0px;
+
+  }
+  
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  .responsive-dialog-content {
+    
+            max-width: 640px;
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    left: 500px;
+  }
+
+  .button
+  {
+    
+   margin-right: 260px;
+        margin-top: 10px;
+
+  }
+
+}
+
+/* High resolution devices (Foldables, Surface Pro, iPads) */
+@media  (max-width: 1030px) and (max-height: 605px) {
+  .responsive-dialog-content {
+    max-width: 640px;
+    padding: 2rem;
+     top:0px;
+  
+  }
+  .button
+  {
+    
+    margin-right: 0px;
+
+  }
+  
+}
+
+@media  (width: 768px) and (height:608px) {
+  .responsive-dialog-content {
+    left: 385px;
+    top: 0px;
+  
+  }
+  
+  
+}
+
+
+@media  (max-width: 545px) and (max-height: 725px) {
+  .responsive-dialog-content {
+    left: 270px;
+    top: 20px;
+    width: 415.6px;
+    height: 565.6px;
+    margin-top: 10px;
+  }
+  .button
+  {
+    
+    margin-right: 0px;
+    font-size: 12px;
+  padding: 6px 12px;
+  height: 28px;
+  border-radius: 6px;
+  margin-top: 0px;
+
+  }
+
+  .para
+  {
+    font-size: small;
+  }
+  
+}
+
+@media  (max-width: 435px) and (max-height: 935px) {
+   .responsive-dialog-content {
+    padding: 1rem;
+    max-width: 95%;
+    margin: 3vh auto;
+    top: 290px;
+  }
+
+  .responsive-dialog-content input,
+  .responsive-dialog-content select {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+
+  .responsive-dialog-content label {
+    font-size: 0.85rem;
+  }
+
+  .responsive-dialog-content button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+     .button
+  {
+    
+    margin-right: 0px;
+    font-size: 12px;
+  padding: 6px 12px;
+  height: 28px;
+  border-radius: 6px;
+  margin-top: 0px;
+
+  }
+
+   .para
+  {
+    font-size: small;
+  }
+  
+}
+
+@media  (max-width: 426px)
+{
+    .responsive-dialog-content
+    {
+         left: 202px;
+         top: 0px;
+         margin-top: 0px;
+    
+    }
+
+}
+
+@media  (max-width: 415px)
+{
+    .responsive-dialog-content
+    {
+         left: 208px;
+         top: 290px;
+         margin-top: 0px;
+    
+    }
+
+     .button
+  {
+    
+    margin-right: 0px;
+    font-size: 12px;
+  padding: 6px 12px;
+  height: 28px;
+  border-radius: 6px;
+  margin-top: 0px;
+
+  }
+
+   .para
+  {
+    font-size: small;
+  }
+
+}
+@media  (max-width: 395px)
+{
+    .responsive-dialog-content
+    {
+        left: 195px;
+    
+    }
+
+}
+@media  (max-width: 380px)
+{
+    .responsive-dialog-content
+    {
+        top: 290px; 
+   left: 178px;
+    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    }
+
+}
+
+@media  (max-width: 365px)
+{
+    .responsive-dialog-content
+    {
+     left: 172px;
+    
+    }
+
+}
+
+@media  (max-width: 350px)
+{
+    .responsive-dialog-content
+    {
+         top: 320px;
+    
+    }
+
+}
+
+@media  (max-width: 325px)
+{
+    .responsive-dialog-content
+    {
+             left: 153px;
+    
+             top: 0px;
+    
+    }
+
+}
+
+/* Typography and spacing optimization for smaller screens */
+
+/* @media (max-width: 768px) {
+  .responsive-dialog-content {
+   
+    font-size: 0.875rem; 
+  }
+
+  .responsive-dialog-content input,
+  .responsive-dialog-content select {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+} */
+
+
+

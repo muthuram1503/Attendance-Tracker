@@ -1,0 +1,126 @@
+/* Default (mobile) */
+/* .element {
+  display: block;                  
+  margin-top: 0.75rem;             
+  margin-bottom: 0.75rem;
+  max-height: 600px;               
+  overflow-y: auto;               
+  padding-right: 0.5rem;           
+}*/
+
+
+    
+@media (min-width: 768px) {
+  .element {
+    display: none;                 
+  }
+} 
+/* Show only on mobile */
+.mobile-cards {
+  display: block;
+  max-height: 70vh;       /* restrict height to viewport */
+  overflow-y: auto;       /* enable vertical scroll */
+  padding-right: 8px;     /* space for scrollbar */
+}
+
+@media (min-width: 768px) {
+  .mobile-cards {
+    display: none; /* hide on tablet/desktop */
+  }
+}
+
+@media (max-width:430) {
+ .mobile-cards
+ {
+     height: 2000px;
+ }
+
+.student {
+    border-bottom-width: 500px !important;
+  }
+  .max-h-\[600px\]
+  {
+    max-height: auto;
+  }
+}
+
+.student-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.student-reg {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.student-percentage {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.student-percentage.low {
+  color: #dc2626; /* red */
+}
+
+.student-percentage.high {
+  color: #16a34a; /* green */
+}
+
+.student-body {
+  margin-top: 12px;
+}
+
+.student-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+}
+
+.progress-fill.low {
+  background: #ef4444; /* red */
+}
+
+.progress-fill.high {
+  background: #22c55e; /* green */
+}
+
+.no-data {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+.scroll-box {
+  height:2500px;   /* or 100vh if full screen */
+  overflow-y: auto;   /* adds vertical scroll */
+}

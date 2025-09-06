@@ -1,0 +1,226 @@
+.subjects-container {
+  height: 80vh;
+  overflow-y: auto;
+  padding-right: 0.5rem; /* pr-2 */
+}
+
+.subjects-grid {
+  display: grid;
+ grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1.5rem; /* gap-6 */
+  margin-top: 2rem; /* mt-8 */
+}
+.subjects-container {
+  height: 80vh;
+  overflow-y: auto;
+  padding-right: 0.5rem; /* matches pr-2 */
+
+
+}
+
+@media (min-width: 1300px) {
+   .subjects-container
+   {
+        padding-bottom: 0px;
+   }
+
+}
+@media (max-width: 1285px) and (max-height: 805px) {
+ 
+  
+   .subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 50px; 
+  max-width: 800px; 
+  margin: 0 auto;
+  margin-left: 100px;
+   overflow-y:scroll;
+   padding-bottom: 200px;   
+  
+}
+
+
+.subject-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.justify-end
+{
+    
+    padding-top: 10px;
+        padding-left: 50px;
+            justify-content: left;
+   
+
+}
+
+}
+
+@media (max-width: 1030px) and (max-height: 1370px) {
+ 
+
+  .subjects-container {
+  /* height: 80vh; */
+  overflow-y: auto;
+  padding-right: 0.5rem; /* pr-2 */
+      padding-bottom: 650px;
+}
+
+.subjects-grid {
+  display: grid;
+ grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1.5rem; /* gap-6 */
+  margin-top: 2rem; /* mt-8 */
+}
+
+
+  .p-6
+  {
+    padding-bottom: 100px;
+  }
+     
+}
+
+@media  (max-width: 920px) and (max-height: 1375px) {
+    .subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 50px; 
+  max-width: 800px; 
+  margin: 0 auto;
+  margin-left: 100px;
+   overflow-y:scroll;
+   padding-bottom: 200px;   
+  
+}
+
+
+.subject-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.justify-end
+{
+    
+    padding-top: 10px;
+        padding-left: 50px;
+            /* justify-content: left; */
+   
+
+}
+
+.subjects-container
+{
+  padding-bottom: 750px;
+}
+
+
+}
+
+
+@media  (max-width: 770px) and (max-height: 1030px) {
+  .subjects-grid
+  {
+    margin-left:0px;
+       
+  }
+
+}
+
+@media  (max-width: 435px) and (max-height: 935px) {
+
+  @media (max-width: 435px) and (max-height: 935px) {
+  .subjects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 16px; /* Smaller gap for mobile */
+    width: 100%; /* Full width */
+    max-width: 100%; /* Remove width constraint */
+    margin: 0 auto;
+    padding: 0 10px; /* Small side padding */
+    overflow-y: auto; /* Vertical scroll */
+    padding-bottom: 20px; /* Space at bottom */
+  }
+
+  .subject-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make sure card fills row */
+  }
+}
+
+
+
+}
+
+.subject-card {
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  background-color: white;
+  border: 1px solid #e5e7eb; /* border */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
+  padding: 1.5rem; /* p-6 */
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.subject-card:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15); /* hover:shadow-lg */
+}
+
+.subject-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #1d4ed8; /* text-blue-700 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.subject-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.subject-text:last-of-type {
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.subject-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem; /* gap-2 */
+  margin-top: 1rem; /* mt-4 */
+}
+
+.btn-edit {
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border: 1px solid #d1d5db; /* border */
+  font-size: 0.875rem; /* text-sm */
+  border-radius: 0.25rem; /* rounded */
+  background-color: white;
+}
+
+.btn-edit:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.btn-delete {
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  background-color: #ef4444; /* bg-red-500 */
+  color: white;
+  font-size: 0.875rem; /* text-sm */
+  border-radius: 0.25rem; /* rounded */
+}
+
+.btn-delete:hover {
+  background-color: #dc2626; /* hover:bg-red-600 */
+}

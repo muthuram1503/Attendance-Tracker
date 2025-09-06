@@ -1,0 +1,29 @@
+.custom-box {
+  padding-top: 1rem;   
+  padding-bottom: 1rem; 
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem; 
+
+  background-color: #ffffff; 
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+  border-radius: 0.5rem; 
+}
+
+
+.custom-box > * + * {
+  margin-top: 1rem; 
+} 
+
+ @media (max-width:1285) and (max-height: 805px) 
+{
+  .custom-box {
+
+        top: 100px;
+
+  }
+   
+} 
+
+

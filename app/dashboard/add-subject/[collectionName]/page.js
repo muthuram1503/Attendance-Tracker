@@ -2,8 +2,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Addnewstudent from "@/app/dashboard/students/_components/Addnewstudent";
-import StudentListTable from "@/app/dashboard/students/_components/StudentListTable";
+import Addnewstudent from "@/app/dashboard/students/components/Addnewstudent";
+import StudentListTable from "@/app/dashboard/students/components/studentListtable";
 import { useParams } from "next/navigation";
 import DashboardRedirect  from "@/app/dashboard/page.js";
 export default function StudentsBySubject() {

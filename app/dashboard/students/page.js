@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Addnewstudent from "./_components/Addnewstudent";
-import StudentListTable from "./_components/StudentListTable"; 
+import Addnewstudent from "./components/Addnewstudent";
+import StudentListTable from "./components/studentListtable"; 
 // import StudentListPage from "./_components/StudentListPage";// Capitalized correctly
 
 
